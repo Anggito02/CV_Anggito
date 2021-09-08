@@ -8,5 +8,62 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Background */
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 1204px;
+
+    background-image: url("assets/image-from-rawpixel-id-3285747-original.jpg");
+    background-size: cover;
+    mix-blend-mode: lighten;
+    opacity: 0.65;
+    filter: blur(15px);
+
+    transform: translateY(-220px);
+}
+
+/* Navigation Bar */
+nav {
+    border: 1px solid blue;
+}
+
+nav >
+ul {
+    display: flex;
+
+    border: 1px solid red;
+}
+
+nav >
+ul >
+li {
+    width: 100%;
+
+    color: #F0F8FF;
+
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    
+    border: 1px solid black;
+}
