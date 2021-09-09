@@ -95,8 +95,6 @@ ul >
 li {
     width: 100%;
 
-    color: #F0F8FF;
-
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -104,11 +102,13 @@ li {
 }
 
 nav ul li a:hover {
-    color: rgb(34, 24, 24);
+    color: #2E4975;
     transition-duration: .4s;
 }
 
 nav ul li a {
+    color: #F0F8FF;
+    
     transition-duration: .4s;
 }
 
@@ -346,18 +346,33 @@ h2 {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    padding: 100px 0;
+    padding: 100px 0px 100px 174px;
 }
 
 .year-edu-exp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     font-family: PT Sans;
     font-weight: bold;
     font-size: 28px;
 
     text-align: right;
     letter-spacing: 0.1em;
+}
+
+.year-edu-exp::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    background-color: rgba(240, 248, 255, 0.8);
+
+    transform: translateX(68px)
 }
 
 .school-type {
@@ -370,22 +385,40 @@ h2 {
 }
 
 .edu-left-wrapper {
-    width: 270px;
+    width: 387px;
+    height: 661px;
+
+    padding-right: 59px;
 
     text-align: right;
-
-    border: 1px solid pink;
 }
 
 .edu-right-wrapper {
     width: 561px;
-    height: 451px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-left: 59px;
+    padding-top: 0px;
 
     font-family: PT Sans;
     font-size: 18px;
     letter-spacing: 0.12em;
 
-    border: 1px solid red;
+    border-left: 1px solid rgba(240, 248, 255, 0.4);
+
+    transform: translateY(39px);
+}
+
+.edu-right-wrapper >
+h2 {
+    margin-bottom: 86px;
+
+    transform: translateY(-40px);
 }
 
 /* Experience Content */
