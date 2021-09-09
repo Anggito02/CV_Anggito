@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
     <script src="main.js"></script>
     <title>Curriculum Vitae</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><span class="nav-txt">About Me</span></li>
-            <li><span class="nav-txt">Education</span></li>
-            <li><span class="nav-txt">Experience</span></li>
-            <li><span class="nav-txt">Achievement</span></li>
-            <li><span class="nav-txt">Skill</span></li>
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Achievement">Achievement</a></li>
+            <li><a href="#Skill">Skill</a></li>
         </ul>
     </nav>
 
@@ -25,7 +26,7 @@
         <h1>ANGGITO ANJU HARTAWAN<br>MANALU<br><span id="profession">College Student</span></h1>
     </header>
 
-    <div class="profile-wrapper">
+    <div id="AboutMe" class="profile-wrapper">
         <div class="profile-pict-wrapper">
             <img id="profile-pict" src="assets/Pas Foto.png" alt="Anggito Anju">
         </div>
@@ -42,13 +43,13 @@
         <div class="about-me-last">
             <div class="socmed-icon-wrapper">
                 <a href="https://www.linkedin.com/in/anggitoanjuhartawanmanalu" target="_blank" rel="noopener noreferrer">
-                    <img class="socmed-icon" src="assets/Socmed-Logos/linkedin.png" alt="linkedin" srcset="">
+                    <p class="socmed-icon"><i class="fab fa-linkedin" style="color: #030824; transform: scale(3);"></i></p>
                 </a>
                 <a href="http://www.instagram.com/anggitoanju" target="_blank" rel="noopener noreferrer">
-                    <img class="socmed-icon" src="assets/Socmed-Logos/instagram.png" alt="instagram" srcset="">
+                    <p class="socmed-icon"><i class="fab fa-instagram-square" style="color: #030824; transform: scale(3);"></i></p>
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100008957016241" target="_blank" rel="noopener noreferrer">
-                    <img class="socmed-icon" src="assets/Socmed-Logos/facebook.png" alt="" srcset="">
+                    <p class="socmed-icon"><i class="fab fa-facebook-square" style="color: #030824; transform: scale(3);"></i></p>
                 </a>
             </div>
             <button id="cv-download">Download CV</button>
@@ -56,7 +57,7 @@
     </div>
 
     <div class="education-experience-wrapper">
-        <div class="titles-edu-exp-wrapper">
+        <div id="Education" class="titles-edu-exp-wrapper">
             <h2>EDUCATION</h2>
         </div>
 
@@ -90,7 +91,7 @@
     </div>
     
     <div class="education-experience-wrapper">
-        <div class="titles-edu-exp-wrapper">
+        <div id="Experience" class="titles-edu-exp-wrapper">
             <h2>EXPERIENCE</h2>
         </div>
         
@@ -138,6 +139,10 @@
         </div>
     </div>
 
-    <div class="ach-wrapper"></div>
+    <div class="ach-wrapper">
+        <div id="Achievement" class="ach-title">
+            <h2>ACHIEVEMENT</h2>
+        </div>
+    </div>
 </body>
 </html>
