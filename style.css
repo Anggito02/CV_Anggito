@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@300;500;700&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@300;500;600;700&family=PT+Sans:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -21,15 +21,24 @@ button {
     background: none;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+ul >
+li {
+    cursor: pointer;
+}
+
 /* Header Background */
 #header-bg {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: -1;
@@ -69,7 +78,11 @@ h1 {
 
 /* Navigation Bar */
 nav {
-    padding: 28px 0px;    
+    position: sticky;
+    top: 0;
+
+    padding: 28px 0px;
+    border: 1px solid #2E4975;
 }
 
 nav >
@@ -122,16 +135,133 @@ li {
 
 /* About Me */
 .socmed-icon {
-    width: 46px;
-    height: 46px;
+    width: 34px;
+    height: 34px;
+}
+
+.socmed-icon:hover {
+    transform: scale(1.15);
+    transition-duration: 0.4s;
+}
+
+.socmed-icon:active {
+    transform: scale(1.05);
 }
 
 .about-me-wrapper {
     width: 100%;
-    height: 400px;
+    height: 695px;
+    padding-top: 78px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     background-color: #F0F8FF;
     color: #030824;
 
     transform: translateY(-160px);
+}
+
+/* Left Side About Me */
+.about-me-first {
+    width: 586px;
+    height: 352px;
+    margin-left: 75px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-me-first >
+h2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    
+    letter-spacing: 0.18em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-me-first >
+h2::after {
+    content: "";
+    width: 98px;
+    height: 8px;
+    margin-left: 11px;
+    margin-top: 12px;
+
+    background-color: #DF3143;
+}
+
+.about-me-first >
+h5 {
+    width: 586px;
+    height: 189px;
+
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 45px;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.06em;
+}
+
+/* Right Side About Me */
+.about-me-last {
+    width: 259px;
+    height: 352px;
+    margin-right: 248px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.socmed-icon-wrapper {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socmed-icon-wrapper a:nth-child(2) {
+    margin: 0px 22px;
+}
+
+#cv-download {
+    width: 80%;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+
+    letter-spacing: 0.06em;
+
+    color: #BBC8DD;
+    background: linear-gradient(270deg, 
+        #2E4975 0%, rgba(46, 73, 117, 0.593221) 85.42%, 
+        rgba(46, 73, 117, 0.34375) 99.97%, 
+        rgba(46, 73, 117, 0) 99.98%, 
+        rgba(46, 73, 117, 0.34375) 99.99%);
+    border-radius: 16px;
+}
+
+#cv-download:hover {
 }
