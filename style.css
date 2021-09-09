@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@300;500;600;700&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@300;500;600;700;900&family=PT+Sans:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -31,11 +31,6 @@ ul {
     margin: 0;
 }
 
-ul >
-li {
-    cursor: pointer;
-}
-
 /* Header Background */
 #header-bg {
     position: fixed;
@@ -55,6 +50,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    padding-top: 180px;
 }
 
 header >
@@ -79,7 +76,7 @@ h1 {
 /* Navigation Bar */
 nav {
     position: sticky;
-    top: 0;
+    top: 0px;
 
     padding: 28px 0px;
     border: 1px solid #2E4975;
@@ -103,11 +100,22 @@ li {
     text-align: center;
 }
 
+.nav-txt {
+    cursor: pointer;
+}
+
+.nav-txt:hover {
+    transform: translateY(20px);    
+}
+
+
 /* Profile Picture */
 .profile-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateY(142px);
 }
 
 .profile-pict-wrapper {
@@ -135,8 +143,8 @@ li {
 
 /* About Me */
 .socmed-icon {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
 }
 
 .socmed-icon:hover {
@@ -159,8 +167,6 @@ li {
 
     background-color: #F0F8FF;
     color: #030824;
-
-    transform: translateY(-160px);
 }
 
 /* Left Side About Me */
@@ -260,8 +266,134 @@ h5 {
         rgba(46, 73, 117, 0.34375) 99.97%, 
         rgba(46, 73, 117, 0) 99.98%, 
         rgba(46, 73, 117, 0.34375) 99.99%);
+    box-shadow: inset 0 0 0 0 #BBC8DD;
+    transition: ease-out 0.3s;
     border-radius: 16px;
 }
 
 #cv-download:hover {
+    color: #030824;
+    box-shadow: inset 240px 0 0 0 #BBC8DD;
+}
+
+/* Education */
+.education-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #FFFFFF;
+    background-color: #2E4975;
+}
+
+.titles-edu-exp-wrapper {
+    width: 100%;
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #BBC8DD;
+
+    border-top: 3px solid #F0F8FF;
+    border-bottom: 3px solid #F0F8FF;
+}
+
+.titles-edu-exp-wrapper >
+h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 48px;
+
+    letter-spacing: 0.18em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titles-edu-exp-wrapper::after,
+.titles-edu-exp-wrapper::before {
+    content: "";
+    width: 68px;
+    height: 8px;
+
+    background-color: #5C010B;
+}
+
+.titles-edu-exp-wrapper::after {
+    margin-left: 12px;
+}
+
+.titles-edu-exp-wrapper::before {
+    margin-right: 22px;
+}
+
+/* Education Content */
+.edu-exp-content-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 0;
+}
+
+.year-edu-exp {
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 28px;
+
+    text-align: right;
+    letter-spacing: 0.1em;
+}
+
+.school-type {
+    font-family: Hind;
+    font-size: 24px;
+    font-weight: normal;
+
+    text-align: right;
+    letter-spacing: 0.2em;
+}
+
+.edu-left-wrapper {
+    width: 270px;
+
+    text-align: right;
+
+    border: 1px solid pink;
+}
+
+.edu-right-wrapper {
+    width: 561px;
+    height: 451px;
+
+    font-family: PT Sans;
+    font-size: 18px;
+    letter-spacing: 0.12em;
+
+    border: 1px solid red;
+}
+
+/* Experience Content */
+.exp-left-wrapper {
+    width: 195px;
+    height: 1473px;
+
+    border: 1px solid red;
+}
+
+.exp-right-wrapper {
+    width: 631px;
+    height: 1717px;
+    border: 1px solid violet;
+}
+
+.footer-exp {
+    color: #F0F8FF;
+
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
 }
