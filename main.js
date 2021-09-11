@@ -13,3 +13,13 @@ window.addEventListener('scroll', function (event) {
         nav.style.backgroundColor = 'transparent';
     }
 });
+
+/* Parallax Effect Header */
+window.addEventListener('scroll', function(event) {
+    event.preventDefault();
+
+    var yScroll = this.window.scrollY;
+    var headWrap = this.document.querySelector('#head-par');
+
+    headWrap.style.transform = 'translate(0px, '+ yScroll/6 +'%)'
+})
