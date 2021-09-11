@@ -259,7 +259,7 @@ nav ul li a {
 }
 
 #cv-download {
-    width: 80%;
+    width: 200px;
     height: 48px;
 
     display: flex;
@@ -279,7 +279,7 @@ nav ul li a {
         rgba(46, 73, 117, 0) 99.98%, 
         rgba(46, 73, 117, 0.34375) 99.99%);
     box-shadow: inset 0 0 0 0 #BBC8DD;
-    transition: ease-out 0.3s;
+    transition: ease-out 0.4s;
     border-radius: 16px;
 }
 
